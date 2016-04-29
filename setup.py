@@ -16,7 +16,7 @@ setup(
     description="flask module providing tissue thin wrapper around pybarcode",
     long_description=__doc__,
     packages=["flask_svg_barcode"],
-    zip_safe=True,
+    zip_safe=False,
     include_package_data=True,
     platforms="any",
     install_requires=[
