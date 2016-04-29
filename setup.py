@@ -19,7 +19,7 @@ setup(
         "pybarcode",
         "flask-restful",
         ],
-    zip_safe=False,
+    zip_safe=True,
     include_package_data=True,
     platforms="any",
     install_requires=[
