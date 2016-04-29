@@ -2,6 +2,8 @@
 
 Flask extension providing tissue thin wrapper around pybarcode.
 
+MIT Licensed like pybarcode, because that seems polite.
+
 Creates an api endpoint for your project to create an svg barcode from a string.
 
 ##Installation
