@@ -12,6 +12,7 @@ setup(
     license="BSD",
     author="Doug Shawhan",
     author_email="doug.shawhan@gmail.com",
+    url="https://github.com/lysdexia/flask-svg-barcode"
     description="flask module providing tissue thin wrapper around pybarcode",
     long_description=__doc__,
     packages=[
