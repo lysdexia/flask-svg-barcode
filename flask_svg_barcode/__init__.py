@@ -9,8 +9,10 @@ except ImportError:
 
 def svg_barcode(app, endpoint):
     """
-    flask module providing tissue thin wrapper around pybarcode
-    http://pythonhosted.org/pyBarcode/
+    flask extension providing tissue thin wrapper around pybarcode
+    You can find pyBarcode with it's nice licenses and documentation at
+        http://pythonhosted.org/pyBarcode/
+    You'll be glad you did.
     
     accepts
         app <object> for circular import of curcularity
@@ -99,9 +101,5 @@ class SVGBarcode(object):
         if not endpoint:
             endpoint = "/api/barcode"
 
-        if hasattr(app, "teardown_appcontext"):
-            app.teardown_appcontext(self.teardown)
-        else:
-            app.teardown_request(self.teardown)
 
         svg_barcode(app, endpoint)
