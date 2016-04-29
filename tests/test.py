@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from flask import Flask
-from flask_svg_barcode import svg_barcode
+from flask_svgbarcode import svg_barcode
 app=Flask(__name__)
 api = svg_barcode(app, "/api/barcode")
 

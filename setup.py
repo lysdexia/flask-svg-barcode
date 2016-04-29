@@ -15,7 +15,7 @@ setup(
     url="https://github.com/lysdexia/flask-svg-barcode",
     description="flask module providing tissue thin wrapper around pybarcode",
     long_description=__doc__,
-    packages=["flask_svg_barcode"],
+    packages=["flask_svgbarcode"],
     zip_safe=False,
     include_package_data=True,
     platforms="any",
