@@ -101,5 +101,9 @@ class SVGBarcode(object):
         if not endpoint:
             endpoint = "/api/barcode"
 
+        if hasattr(app, "teardown_appcontext"):
+            app.teardown_appcontext(self.teardown)
+        else:
+            app.teardown_request(self.teardown)
 
         svg_barcode(app, endpoint)
