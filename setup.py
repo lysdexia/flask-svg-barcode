@@ -7,23 +7,22 @@ Flask-SVGBarcode
 from setuptools import setup
 
 setup(
-    name=Flask-SVGBarcode,
+    name="Flask-SVGBarcode",
     version="0.1",
     license="BSD",
     author="Doug Shawhan",
     author_email="doug.shawhan@gmail.com",
-    url="https://github.com/lysdexia/flask-svg-barcode"
+    url="https://github.com/lysdexia/flask-svg-barcode",
     description="flask module providing tissue thin wrapper around pybarcode",
     long_description=__doc__,
-    packages=[
-        "pybarcode",
-        "flask-restful",
-        ],
+    packages=[],
     zip_safe=True,
     include_package_data=True,
     platforms="any",
     install_requires=[
         "Flask",
+        "pyBarcode",
+        "Flask-RESTful",
     ],
     classifiers=[
         'Environment :: Web Environment',
@@ -35,7 +34,3 @@ setup(
         'Topic :: Software Development :: Libraries :: Python Modules'
     ]
 )
-
-
-
-        )
