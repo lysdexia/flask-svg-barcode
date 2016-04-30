@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		
+		<link rel="stylesheet" type="text/css" href="{{ url_for("static", filename="css/test-barcode.css") }}"> 
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>  
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<script type="text/javascript" src="{{ url_for('static', filename='js/test-barcode.js') }}"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-md-6">
+				<div id="barcode">
+				<div>
+				<div id="error"></div>
+			</div>
+			<div class="col-md-6">
+				<form>
+					<fieldset class="form-group">
+						<label for="barcode_format">Barcode Format</label>
+						<select id="barcode_format" class="form-control">
+							<option>code39</option>
+							<option>ean</option>
+							<option>ean13</option>
+							<option>ean8</option>
+							<option>gs1</option>
+							<option>gtin</option>
+							<option>isbn</option>
+							<option>isbn10</option>
+							<option>isbn13</option>
+							<option>issn</option>
+							<option>jan</option>
+							<option>pzn</option>
+							<option>upc</option>
+							<option>upca</option>
+						</select>
+					</fieldset>
+					<fieldset class="form-group">
+						<label for="barcode_string">Barcode String</label>
+						<input type="text" id="barcode_string" class="form-control"></input>
+					</fieldset>
+					<button id="barcode_button" class="btn btn-primary">Show Barcode</button>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
