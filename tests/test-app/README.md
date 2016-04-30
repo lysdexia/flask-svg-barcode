@@ -10,3 +10,6 @@ source venv/bin/activate
 ```
 
 Browse to http://localhost:5000 and groove on the stripey bits.
+
+Have a look at ```tests/test-app/static/js/test-barcode.js``` for some bright
+ideas on how to use this. The innerHTML technique is kind of crappy, but it should be fine for displaying your coupon.
