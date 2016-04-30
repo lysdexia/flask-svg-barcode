@@ -1,4 +1,4 @@
-#Flask-SVGBarcode
+# Flask-SVGBarcode
 
 Flask extension providing tissue thin wrapper around pybarcode.
 
@@ -6,12 +6,12 @@ MIT Licensed like pybarcode, because that seems polite.
 
 Creates an api endpoint for your project to create an svg barcode from a string.
 
-##Installation
+## Installation
 ```bash
 pip install git+https://github.com/lysdexia/flask-svg-barcode
 ```
 
-##Usage
+## Usage
 
 ```python
 #!/usr/bin/env python
@@ -35,7 +35,3 @@ curl \
 http://localhost:5000/api/barcode
 
 ```
-
-# TODO
-1. some simple authentication is indicated
-1. database hooks
